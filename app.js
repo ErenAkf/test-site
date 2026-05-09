@@ -38,7 +38,7 @@ async function validateForm(event) {
 
     try {
         // Server'a POST isteği gönder
-        const response = await fetch('/.netlify/functions/save', {
+        const response = await fetch('/api/save', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ async function validateForm(event) {
 
 async function loadDataFromServer() {
     try {
-        const response = await fetch('/.netlify/functions/veriler');
+        const response = await fetch('/api/veriler');
         const data = await response.text();
         document.getElementById('userList').innerText = data;
     } catch (error) {
