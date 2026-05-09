@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Tema Değiştir</button>
+    <div class="container">
+        <h1>Test Sitesi</h1>
+        <p>Bu bir test web sitesi örneğidir. JavaScript ile etkileşimli özellikler eklendi.</p>
+        <button onclick="testFunction()">Tıkla ve Test Et</button>
+        <div id="output"></div>
+
+        <form id="userForm">
+            <input type="text" id="name" placeholder="Adınız">
+            <input type="email" id="email" placeholder="E-posta adresiniz">
+            <button type="submit" class="submit-btn">Kaydet</button>
+        </form>
+        <div id="formResult"></div>
+
+        <h2>Kaydedilen Kullanıcılar</h2>
+        <div id="userList" class="user-list"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
